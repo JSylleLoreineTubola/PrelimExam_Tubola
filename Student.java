@@ -1,6 +1,6 @@
 import java.util.*;
 public class Student {
-    private int ID;
+    private int IDd;
     private int pts;
     private int hrs;
     private double gp;
@@ -8,19 +8,19 @@ public class Student {
     public Student() {
     }
 
-    public Student(int ID, int pts, int hrs) {
-        this.ID = ID;
+    public Student(int IDd, int pts, int hrs) {
+        this.IDd = IDd;
         this.pts = pts;
         this.hrs = hrs;
         calculateGradePoint();
     }
 
-    public int getID() {
-        return ID;
+    public int getIDd() {
+        return IDd;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setIDd(int IDd) {
+        this.ID = IDd;
     }
 
     public int getHrs() {
@@ -41,7 +41,7 @@ public class Student {
 
    @Override
    public String toString() {
-       return "\n ID number : " + ID + "\n Number of points earned : " + pts + "\n Credit hours : " + hrs + "\n Grade point average : "
+       return "\n ID number : " + IDd + "\n Number of points earned : " + pts + "\n Credit hours : " + hrs + "\n Grade point average : "
                + gp;
    }
 
